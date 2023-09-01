@@ -17,6 +17,7 @@ searchBtn.addEventListener("click", function () {
       console.log(data[0].continents[0]);
       console.log(data[0].population);
       console.log(Object.keys(data[0].currencies)[0]);
-      console.log(data[0].languages);
+      console.log(data[0].currencies[Object.keys(data[0].currencies)].name);
+      console.log(Object.values(data[0].languages).toString().split(",").join(", "));
     });
 });
