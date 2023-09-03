@@ -58,3 +58,12 @@ button:active {
   position: relative;
   top: 1px;
 }
+
+.flag-bar {
+  text-align: center;
+}
+
+.flag {
+  width: 200px;
+  height: 200px;
+}
