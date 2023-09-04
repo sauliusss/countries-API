@@ -32,13 +32,13 @@ searchBtn.addEventListener("click", function () {
         <h2>Continent: ${data[0].continents[0]}</h2>
         </div>
         <div class="population">
-        <h2>${data[0].population}</h2>
+        <h2>Population: ${data[0].population}</h2>
         </div>
         <div class="currency">
-        <h2>${Object.keys(data[0].currencies)[0]}</h2>
+        <h2>Currency: ${Object.keys(data[0].currencies)[0]}</h2>
         </div>
         <div class="language">
-        <h2>${Object.values(data[0].languages).toString().split(",").join(", ")}</h2>
+        <h2>Language: ${Object.values(data[0].languages).toString().split(",").join(", ")}</h2>
         </div>
       </div>
 
