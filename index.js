@@ -35,7 +35,7 @@ searchBtn.addEventListener("click", function () {
         <h2>Population: ${data[0].population}</h2>
         </div>
         <div class="currency">
-        <h2>Currency: ${Object.keys(data[0].currencies)[0]}</h2>
+        <h2>Currency: ${data[0].currencies[Object.keys(data[0].currencies)].name} - ${Object.keys(data[0].currencies)[0]}</h2>
         </div>
         <div class="language">
         <h2>Language: ${Object.values(data[0].languages).toString().split(",").join(", ")}</h2>
@@ -43,5 +43,12 @@ searchBtn.addEventListener("click", function () {
       </div>
 
 `;
+    })
+    .catch(() => {
+      if (searchCountry.lenght === 0) {
+        flagBar.innerHTML = `<h3>The input field cannot be empty</h3>`;
+      } else {
+        flagBar.innerHTML = `<h3>Please enter a valid country name</h3>`;
+      }
     });
 });
