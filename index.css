@@ -76,8 +76,9 @@ button:active {
 
 .country-info {
   display: block;
-  margin-top: 50px;
+  margin-top: 40px;
   text-align: left;
+  font-size: 18px;
 }
 
 .capital {
