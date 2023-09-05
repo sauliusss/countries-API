@@ -145,3 +145,15 @@ searchBtn.addEventListener("click", country);
 //       }
 //     });
 // });
+
+// let notEmpty = function () {
+//   if (searchCountry.lenght === 0) {
+//     let div = document.createElement("div");
+//     div.classList("err");
+//     const msg = createElement("msg");
+//     msg.textContent = `The input field cannot be empty`;
+//     div.append(msg);
+//   } else {
+//     msg.textContent = `Please enter a valid country name`;
+//   }
+// };
